@@ -7,7 +7,9 @@ require("dotenv").config();
 // } = process.env;
 
 const {
-  DATABASE_URL = "postgres://scvoaltd:qJCsW9RvOqPG0F58EBV6K5U_yUhSoxMy@peanut.db.elephantsql.com/scvoaltd",
+  NODE_ENV = "development",
+  DEVELOPMENT_DATABASE_URL,
+  PRODUCTION_DATABASE_URL,
 } = process.env;
 const URL =
   NODE_ENV === "production"
