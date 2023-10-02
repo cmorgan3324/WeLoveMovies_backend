@@ -2,19 +2,19 @@ const path = require("path");
 
 require("dotenv").config();
 
-// const {
-//   DATABASE_URL = "postgres://scvoaltd:qJCsW9RvOqPG0F58EBV6K5U_yUhSoxMy@peanut.db.elephantsql.com/scvoaltd",
-// } = process.env;
-
 const {
-  NODE_ENV = "development",
-  DEVELOPMENT_DATABASE_URL,
-  PRODUCTION_DATABASE_URL,
+  DATABASE_URL = "postgres://scvoaltd:qJCsW9RvOqPG0F58EBV6K5U_yUhSoxMy@peanut.db.elephantsql.com/scvoaltd",
 } = process.env;
-const URL =
-  NODE_ENV === "production"
-    ? PRODUCTION_DATABASE_URL
-    : DEVELOPMENT_DATABASE_URL;
+
+// const {
+//   NODE_ENV = "development",
+//   DEVELOPMENT_DATABASE_URL,
+//   PRODUCTION_DATABASE_URL,
+// } = process.env;
+// const URL =
+//   NODE_ENV === "production"
+//     ? PRODUCTION_DATABASE_URL
+//     : DEVELOPMENT_DATABASE_URL;
 
 
 module.exports = {
